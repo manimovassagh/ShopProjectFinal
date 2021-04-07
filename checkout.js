@@ -18,9 +18,10 @@ const init = () => {
   <td>${el[i].title}</td> 
   <td>${el[i].price} €</td>
   <td >${el[i].count}</td>
-  <td>${Math.round(el[i].price * el[i].count * 100) / 100}€ </td>
+  <td>${Math.round(el[i].price * el[i].count)}€ </td>
   <td class="d-flex justify-content-around text-center"><i v class="increment bi bi-bag-plus" style="font-size: 1.8rem; "></i> <i class="decrement bi bi-bag-dash" style="font-size: 1.8rem;"></i></td>
   </tr>
+  
   `;
 
     const buttonIncrement = document.querySelectorAll(".increment");
@@ -51,11 +52,13 @@ const init = () => {
 init();
 let TotalCalculater = () => {
   let TotalPrice = null;
-  console.log(el);
   for (let i = 0; i < el.length; i++) {
     TotalPrice += el[i].price * el[i].count;
   }
+  TotalPrice = Math.round(TotalPrice * 100) / 100;
   console.log(TotalPrice);
+  let total=document.querySelector('.total')
+  total.innerHTML=`${TotalPrice} Euro`
 };
 document.addEventListener("click", () => {
   TotalCalculater();
