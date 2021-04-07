@@ -63,3 +63,5 @@ let TotalCalculater = () => {
 document.addEventListener("click", () => {
   TotalCalculater();
 });
+
+window.onload(TotalCalculater())

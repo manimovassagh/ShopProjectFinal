@@ -79,8 +79,8 @@ const shoppingReturn = (data, id) => {
 <img class="card-img-top" src=${data.image} alt="Card image cap">
 <div class="card-body">
   <h5 class="card-title">${data.brand}</h5>
-  <p class="card-text">${data.price}€</p>
   <p class="card-text">${data.title}</p>
+  <p class="card-text"> <strong>${data.price}€</strong></p>
   <a href="#" class="btn btn-primary">click to Buy</a>
 </div>`;
   el.append(card);
