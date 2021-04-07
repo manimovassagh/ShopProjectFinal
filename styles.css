@@ -1,0 +1,20 @@
+img {
+  max-width: 200px;
+}
+
+.container {
+  max-width: 200px;
+}
+.navbar-brand{
+  color: azure !important;
+  font-size: large !important;
+}
+#basket{
+  color: azure ;
+}
+body > nav > div > a:nth-child(3) > i > span{
+  position: relative;
+  right: 28px;
+  bottom: 22px;
+}
+

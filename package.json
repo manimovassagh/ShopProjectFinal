@@ -1,0 +1,16 @@
+{
+  "name": "shopproject-master",
+  "version": "1.0.0",
+  "description": "my shopping project",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap-icons": "^1.4.1",
+    "firebase": "^8.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mani Movassagh",
+  "license": "ISC"
+}

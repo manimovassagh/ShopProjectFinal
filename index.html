@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyAnj96NteCDNQtlKSzBXXoZOBo1B9mqyVY",
+        authDomain: "manishop-c564e.firebaseapp.com",
+        projectId: "manishop-c564e",
+        storageBucket: "manishop-c564e.appspot.com",
+        messagingSenderId: "1071993872282",
+        appId: "1:1071993872282:web:53a47446b236c64ad2e423",
+        measurementId: "G-LPVGPV0WLZ",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script>
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Rabbat Land</title>
+    <style></style>
+  </head>
+  <body>
+    <!-- this is a header part  -->
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand display-1 m-3" href="#">Rabbat Land</a>
+      <!-- Navbar content -->
+      <div class="d-inline-flex">
+        <a class="nav-link" href="#" rel="noopener">
+          <i
+            href="#"
+            class="bi bi-instagram"
+            style="font-size: 1.2rem; color: rgb(255, 255, 255)"
+          ></i>
+        </a>
+
+        <a class="nav-link" href="#" rel="noopener">
+          <i
+            class="bi bi-envelope"
+            style="font-size: 1.2rem; color: rgb(255, 255, 255)"
+          ></i>
+        </a>
+
+        <a class="nav-link" href="./checkout.html" rel="noopener">
+          <i
+            class="bi bi-cart"
+            style="font-size: 1.2rem; color: rgb(255, 255, 255)"
+          >
+            <span class="badge badge-light badgeNumber"></span
+          ></i>
+        </a>
+      </div>
+    </nav>
+    <!-- main area for fetched data -->
+    <div id="root" class="container-fluid padding">
+      <div id="childroot" class="row justify-content-around mt-5 ml-6 mr-6"></div>
+    </div>
+
+    <!-- footer Area -->
+
+    <!-- footer Area -->
+  </body>
+</html>

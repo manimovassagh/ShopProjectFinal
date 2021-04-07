@@ -1,0 +1,22 @@
+[
+  {
+    "productId": 1,
+    "title": "Nike shoe",
+    "availibilaty": true,
+    "Price": "30 Euro",
+    "image":"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/skwgyqrbfzhu6uyeh0gg/air-max-270-shoe-62kcVV.png"
+  },
+  {
+    "productId": 2,
+    "title": "Lacoste coat",
+    "availibilaty": false,
+    "Price": "55.60 Euro",
+    "image":"https://photos6.spartoo.de/photos/160/16026929/16026929_500_A.jpg"  },
+  {
+    "productId": 3,
+    "title": "watch",
+    "availibilaty": true,
+    "Price": "120 Euro",
+    "image":"https://k8q7r7a2.stackpathcdn.com/wp-content/uploads/2020/04/In-Depth-Pellikan-Watches.jpg"
+  }
+]
