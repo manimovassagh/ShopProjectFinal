@@ -47,12 +47,19 @@ submitButton.addEventListener("click", (e) => {
   let brand = document.querySelector("#brand").value;
   let title = document.querySelector("#title").value;
   let price = document.querySelector("#price").value;
+  let instock = document.querySelector("#instock").value;
+  let shopid = document.querySelector("#shopid").value;
+  let image = document.querySelector("#image").value;
   let neuUhr = {
     brand,
     title,
     price,
+    instock,
+    shopid,
+    image,
   };
   console.log(neuUhr);
+  window.onload()
 
   db.collection("items")
     .doc()
