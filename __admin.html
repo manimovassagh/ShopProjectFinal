@@ -45,7 +45,7 @@
     ></script>
     <script src="./admin.js" defer></script>
     <title>Admin</title>
-    <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet" href="./admin.css" />
     <style></style>
   </head>
   <body>
@@ -64,25 +64,27 @@
           </tr>
         </thead>
       </table>
+    </div>
+    <div class="container second">
+      <button id="btnAdd" type="button" class="btn btn-lg btn-danger">
+        add new item to shop
+      </button>
 
-      <button id="btnAdd" type="button" class="btn btn-lg btn-danger" >add new item to shop</button>
-
-      <form id="inputshop" class="d-none">
-        <div class="mb-3 ">
+      <div id="inputshop" class="d-none">
+        <div class="mb-3">
           <label for="brand" class="form-label">Brand</label>
-          <input type="text" class="form-control"  >
+          <input id="brand" type="text" class="form-control" />
         </div>
-        <div class="mb-1 ">
+        <div class="mb-1">
           <label for="title" class="form-label">Title</label>
-          <input type="text" class="form-control"  >
+          <input id="title" type="text" class="form-control" />
         </div>
-                <div class="mb-1 ">
+        <div class="mb-1">
           <label for="Price" class="form-label">Price</label>
-          <input type="number" class="form-control" >
+          <input id="price" type="number" class="form-control" />
         </div>
-        
-        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
-      </form>
+        <button id="submit" class="btn btn-primary">Submit</button>
+      </div>
     </div>
   </body>
 </html>

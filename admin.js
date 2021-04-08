@@ -40,27 +40,27 @@ addtoShop.addEventListener("click", () => {
   }
 });
 
-
-
 //grab form data from adding form
-const btn=document.querySelector('#submit')
-btn.addEventListener('submit',(e)=>{
-    e.preventDefault();
-    console.log(e.target);
-    
-})
+const container = document.querySelector(".second");
+const submitButton = document.querySelector("#submit");
+submitButton.addEventListener("click", (e) => {
+  let brand = document.querySelector("#brand").value;
+  let title = document.querySelector("#title").value;
+  let price = document.querySelector("#price").value;
+  let neuUhr = {
+    brand,
+    title,
+    price,
+  };
+  console.log(neuUhr);
 
-
-//check manualy add item to firebase first
-// db.collection("items")
-//   .doc().set({
-//     brand: "some watch",
-//     price: 440,
-//     title: "model new lorem ippsum",
-//   })
-//   .then(() => {
-//     console.log("Document successfully written!");
-//   })
-//   .catch((error) => {
-//     console.error("Error writing document: ", error);
-//   });
+  db.collection("items")
+    .doc()
+    .set(neuUhr)
+    .then(() => {
+      console.log("Document successfully written!");
+    })
+    .catch((error) => {
+      console.error("Error writing document: ", error);
+    });
+});
