@@ -62,7 +62,8 @@ function tosatify() {
     text: "Item added to your Basket",
     backgroundColor: "blueviolet",
     className: "info primary",
-    position: "center", // `left`, `center` or `right`
+    position: "right", // `left`, `center` or `right`
+    gravity: "top", // `top` or `bottom`
     close: true,
   }).showToast();
 }
@@ -109,6 +110,9 @@ const shoppingReturn = (data, id) => {
     // identifire.push(id);
     // console.log(identifire);
     //use basket to save data in databse
+    const badge = document.querySelector(".badgeNumber");
+    console.log(badge);
+    badge.innerHTML=basket.length
 
     localStorage.setItem("cart", JSON.stringify(basket));
     // localStorage.setItem("identifire", JSON.stringify(identifire));
