@@ -62,7 +62,7 @@ function tosatify() {
     text: "Item added to your Basket",
     backgroundColor: "blueviolet",
     className: "info primary",
-    position: "right", // `left`, `center` or `right`
+    position: "left", // `left`, `center` or `right`
     gravity: "top", // `top` or `bottom`
     close: true,
   }).showToast();
