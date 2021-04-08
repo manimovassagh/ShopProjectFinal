@@ -56,6 +56,17 @@
 //     console.error("Error adding document: ", error);
 // });
 
+// assign a function to use toatify
+function tosatify() {
+  Toastify({
+    text: "Item added to your Basket",
+    backgroundColor: "blueviolet",
+    className: "info primary",
+    position: "center", // `left`, `center` or `right`
+    close: true,
+  }).showToast();
+}
+
 //connect to firebase to fetch data from cloud
 
 db.collection("items")
@@ -87,6 +98,7 @@ const shoppingReturn = (data, id) => {
   const button = card.querySelector(".btn-primary");
   button.addEventListener("click", () => {
     // console.log(" click ", button);
+    tosatify();
     if (basket.includes(data)) {
       data.count++;
     } else {
