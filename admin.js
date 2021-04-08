@@ -18,9 +18,11 @@ const dataReturnAdmin = (data, id) => {
   let admintable = `
   <tr>
     <th scope="row">${data.title}</th>
-    <td>Mark</td>
-    <td>Otto</td>
-    <td>@mdo</td>
+    <td>${data.brand}</td>
+    <td>${data.instock}</td>
+    <td>${data.price}</td>
+    <td>${data.shopid}</td>
+   
   </tr>
  
 `;
