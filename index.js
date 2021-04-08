@@ -85,11 +85,11 @@ const shoppingReturn = (data, id) => {
   shoppingList.push(data);
   let el = document.querySelector("#childroot");
   const card = document.createElement("div");
-  card.className = "card";
+  card.className = "card align-self-end mt-2 border-0";
   card.style.width = "15rem";
   card.innerHTML = `
 <img class="card-img-top" src=${data.image} alt="Card image cap">
-<div class="card-body">
+<div class="card-body ">
   <h5 class="card-title">${data.brand}</h5>
   <p class="card-text">${data.title}</p>
   <p class="card-text"> <strong>${data.price}€</strong></p>
