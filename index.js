@@ -109,10 +109,10 @@ const shoppingReturn = (data, id) => {
     console.log(basket);
     // identifire.push(id);
     // console.log(identifire);
-    //use basket to save data in databse
+    //use basket to save data in frontend
     const badge = document.querySelector(".badgeNumber");
     console.log(badge);
-    badge.innerHTML=basket.length
+    badge.innerHTML = basket.length;
 
     localStorage.setItem("cart", JSON.stringify(basket));
     // localStorage.setItem("identifire", JSON.stringify(identifire));
