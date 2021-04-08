@@ -44,10 +44,10 @@ addtoShop.addEventListener("click", () => {
 
 //grab form data from adding form
 const btn=document.querySelector('#submit')
-console.log(btn);
 btn.addEventListener('submit',(e)=>{
     e.preventDefault();
     console.log(e.target);
+    
 })
 
 
