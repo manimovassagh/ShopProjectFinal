@@ -55,7 +55,7 @@
 // .catch((error) => {
 //     console.error("Error adding document: ", error);
 // });
-
+//the above data is no more usable but i kept it as learning refrence for myself
 // assign a function to use toatify
 function tosatify() {
   Toastify({

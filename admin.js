@@ -27,7 +27,7 @@ const dataReturnAdmin = (data, id) => {
 `;
   ComeOnScreen(admintable);
 };
-
+//toggle to show the form for adding items to firebase
 const toggler = document.querySelector("#inputshop");
 const addtoShop = document.querySelector("#btnAdd");
 // console.log(toggler);
