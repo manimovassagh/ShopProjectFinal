@@ -59,7 +59,6 @@ submitButton.addEventListener("click", (e) => {
     image,
   };
   console.log(neuUhr);
-  window.onload()
 
   db.collection("items")
     .doc()

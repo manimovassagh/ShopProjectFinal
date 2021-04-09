@@ -31,3 +31,7 @@ body > nav > div > a:nth-child(4) > i > span{
  color: rgb(255, 255, 255);
  
 }
+#brand{
+  font-family: 'alphacentauri';
+  font-size: 1.5rem !important;
+}
