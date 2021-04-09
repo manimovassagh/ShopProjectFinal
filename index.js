@@ -120,3 +120,5 @@ const shoppingReturn = (data, id) => {
   let root = document.querySelector("#root");
   root.appendChild(el);
 };
+//#region
+//#endregion
